@@ -13,4 +13,4 @@
 
 """This file is for distribute Acerca de AutoDoc"""
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
