@@ -1,0 +1,5 @@
+ipykernel==6.4.1
+ipython==7.28.0
+nbsphinx==0.8.7
+Sphinx==4.2.0
+sphinx-rtd-theme==1.0.0
