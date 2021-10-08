@@ -11,9 +11,16 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import datetime
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import pathlib
+import sys
+
+
+# this path is pointing to project/docs/source
+CURRENT_PATH = pathlib.Path(os.path.abspath(os.path.dirname(__file__)))
+PYHONCIENTIFICO_PATH = CURRENT_PATH.parent.parent
+
+sys.path.insert(0, str(PYHONCIENTIFICO_PATH))
 
 # -- Project information -----------------------------------------------------
 
@@ -34,6 +41,13 @@ import sphinx_rtd_theme
 
 extensions = [
     'sphinx_rtd_theme',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.viewcode',
+    
     'nbsphinx',
 ]
 
