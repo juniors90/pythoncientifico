@@ -29,7 +29,7 @@ from setuptools import setup  # noqa
 PATH = pathlib.Path(os.path.abspath(os.path.dirname(__file__)))
 
 
-REQUIREMENTS = ['matplotlib>=3.4.3', 'numpy==1.21.2', 'scipy>=1.7.1']
+REQUIREMENTS = ["matplotlib>=3.4.3", "numpy>=1.21.2", "scipy>=1.7.1"]
 
 with open(
     PATH / "pythoncientifico" / "__init__.py", newline="", encoding="utf-8"
