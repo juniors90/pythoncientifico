@@ -17,10 +17,13 @@ import sys
 
 
 # this path is pointing to project/docs/source
+
 CURRENT_PATH = pathlib.Path(os.path.abspath(os.path.dirname(__file__)))
 PYHONCIENTIFICO_PATH = CURRENT_PATH.parent.parent
 
 sys.path.insert(0, str(PYHONCIENTIFICO_PATH))
+# sys.path.insert(0, "D:/Documents/posgrado/FaMAF/PYTHONCIENTIFICO/pythoncientifico")
+# sys.path.insert(0, os.path.abspath('../../'))
 
 # -- Project information -----------------------------------------------------
 
@@ -42,13 +45,15 @@ import sphinx_rtd_theme
 extensions = [
     'sphinx_rtd_theme',
     'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
-    'sphinx.ext.autosummary',
+    'sphinx.ext.napoleon',
+
+    'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
-    
-    'nbsphinx',
+    'sphinx.ext.autosummary',
+
+    'nbsphinx'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

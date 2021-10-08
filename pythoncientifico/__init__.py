@@ -19,4 +19,4 @@ __version__ = "0.1.1"
 # IMPORTS
 # =============================================================================
 
-from .clase1 import *  # noqa
+from .clase_01 import *  # noqa

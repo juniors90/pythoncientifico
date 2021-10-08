@@ -4,10 +4,10 @@ pythoncientifico package
 Submodules
 ----------
 
-pythoncientifico.clase1 module
-------------------------------
+pythoncientifico.clase\_01 module
+---------------------------------
 
-.. automodule:: pythoncientifico.clase1
+.. automodule:: pythoncientifico.clase_01
    :members:
    :undoc-members:
    :show-inheritance:
